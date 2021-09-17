@@ -1,0 +1,74 @@
+body{
+    background-color: #333333;
+}
+#grid{
+display: grid;
+grid-template-columns: 20vw 80vw ;
+overflow: hidden;
+
+}
+
+#game-area{
+    display: grid;
+    height: 100vh;
+    grid-template-rows:8vh 80vh 10vh ;
+}
+#board{
+    display: grid; 
+    grid-template-columns: repeat(8,5.13vw);
+    grid-template-rows: repeat(8, 5.13vw);
+}
+@media screen and (max-width:650px) {
+    #board{
+        display: grid; 
+        grid-template-columns: repeat(8,10vw);
+        grid-template-rows: repeat(8, 10vw);
+}
+}
+#info{
+    background-color: darkslategray ;
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(2, 50%);
+    
+}
+#white{
+    border: 3px solid yellow ; 
+    border-right: 3px solid yellow ;
+}
+#black{
+    border: 3px solid black ; 
+    background-color:#E6E3D3 ;
+}
+.piece{
+position: static;
+}
+.piece:hover{
+    opacity: 0.6 ;
+    }
+
+.hint{
+  background-color: yellow;
+    opacity: .85;
+}
+ .hint:hover{
+    opacity: .5;
+
+ }
+
+.selection-menu{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+.piece-option{
+    border: 3px solid black;
+}
+.piece-option:hover{
+    opacity: .5;
+}
+.gamespace-white{
+background-color:#E6E3D3;
+}
+.gamespace-black{
+    background-color: darkslategray;
+}
