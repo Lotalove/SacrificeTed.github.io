@@ -71,8 +71,7 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 85vw;
-        
+        width: 85vw;    
         }
 
 }
@@ -147,6 +146,7 @@ a{
     background-color: #4A485A;
 }
 #resume-main{
+    display: none;
     height: 100%;
     width: 90%;
     background-color: #4A485A;   
@@ -158,6 +158,9 @@ a{
     #resume{
         justify-content: space-between;
         flex-direction: column;
+    }
+    #resume-main{
+        display: inline;
     }
     #left-bar{
         width: 90%;
