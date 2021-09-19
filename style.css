@@ -64,7 +64,6 @@ a{
     justify-content: space-between;
     display: flex;
     margin-bottom: 2%;
-    
 }
 
 @media screen and (max-width:700px) {
@@ -81,21 +80,17 @@ a{
     display: flex;
     flex-direction: column;
     width: 25vw;
-    height: fit-content;
+    height: 100%;
     background-color: #4A485A;
     color: white;
-    
+    align-self: center;
 }
 @media screen and (max-width:700px) {
     .project{
-        display: flex;
-        flex-direction: column;
+  
         width: 100%;
         height: fit-content;
-        background-color: #4A485A;
-        color: white;
         align-self: center;
-        margin: bottom;
         }
 }
 
@@ -113,6 +108,8 @@ a{
     transition: opacity 1s;
 }
 #resume{
+    background-color: #4A485A;
+    height: fit-content;
     color: white;
     display: flex;
     justify-content:space-around;
@@ -121,6 +118,7 @@ a{
     margin-bottom: 2%;
 }
 #left-bar{
+    height: fit-content;
     display: flex;
     flex-direction: column;
     width: fit-content ;
@@ -144,12 +142,12 @@ a{
     flex-direction: column;
 }
 #resume-profile{
-    height: fit-content;
+    height: inherit;
     width: 90%;
     background-color: #4A485A;
 }
 #resume-main{
-    height: 60vh;
+    height: 100%;
     width: 90%;
     background-color: #4A485A;   
 }
